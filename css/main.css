@@ -436,11 +436,15 @@ img {
   transition: opacity var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
+.current::after:hover {
+  transition: opacity var(--animation-duration-hw-05) var(--bezier-hw-05);
+}
+
 .header-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-list .link.current::after {
+.header-list .link.current:hover::after {
   color: var(--accent-color);
   opacity: 1;
 }
